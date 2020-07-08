@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <h1>Faison's Grading & Landscaping</h1>
         <img src={image} alt='img'/>
-        <h1>Faison's Grading & Landscaping</h1>
        <p>      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
       soluta numquam quibusdam, facilis adipisci reprehenderit incidunt ipsum
       tenetur sequi, officia aut! Deleniti vel quam at minus temporibus!
