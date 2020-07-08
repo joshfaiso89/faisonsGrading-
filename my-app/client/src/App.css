@@ -1,0 +1,18 @@
+.navbar, .li, .a {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+/* .jumbotron {
+  border: solid;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 600px;
+} */
+
+
+
+
+
