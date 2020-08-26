@@ -1,49 +1,27 @@
-import React, { useState } from "react";
-import { Container, Col, Row } from "reactstrap";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
-      <Container className="d-inline-flex p-2">
-        <Row>
-          <Col>
-            {" "}
-            <div>
-              <nav className="navbar navbar-default">
-                <div className="container-fluid">
-                  <div className="navbar-header">
-                    <div className="navbar-brand">
-                      More than 40 years Grading
-                    </div>
-                  </div>
-                  <ul className="nav navbar-nav-inline">
-                    <li className="active">
-                      <div
-                        to="#"
-                        style={{ marginRight: "30px", color: "white" }}
-                      >
-                        Gallary
-                      </div>
-                    </li>
-                    <li className="active">
-                      <div to="#" style={{ color: "white" }}>
-                        Inquire
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Navbar color="faded" light>
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="#">Gallary</NavLink>
+            </NavItem>
+            <NavItem>
+            <NavLink href="#">Contact</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
   );
-};
+}
 
 export default Example;
