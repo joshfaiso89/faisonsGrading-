@@ -14,3 +14,9 @@ body{
 h1{
   text-align: center;
 }
+
+.nav{
+  display: inline;
+  background-color: red;
+}
+

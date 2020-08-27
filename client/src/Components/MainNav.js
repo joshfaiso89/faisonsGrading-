@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import React from "react";
+import "../App.css";
+import { Link } from "react-router-dom";
 
-const Example = (props) => {
-  const [collapsed, setCollapsed] = useState(true);
-
-  const toggleNavbar = () => setCollapsed(!collapsed);
-
+function Nav() {
   return (
     <div>
-      <Navbar color="faded" light>
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="#">Gallary</NavLink>
-            </NavItem>
-            <NavItem>
-            <NavLink href="#">Contact</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+      <nav class="navbar navbar-dark bg-dark">
+        Kenny Faison
+        </nav>
+        <br></br>
+        <nav>
+          <div className="inline">
+          <span className="ml-5">
+            <Link to="/">About</Link>
+          </span>
+          <br></br>
+          <span className="ml-5">
+            <Link to="#">Contact</Link>
+          </span>
+          <br></br>
+          <span className="ml-5">
+            <Link to="#">Gallary</Link>
+          </span>
+          <br></br>
+          </div>
+        
+      </nav>
     </div>
   );
 }
 
-export default Example;
+export default Nav;
