@@ -2,10 +2,10 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-function Nav() {
+function MainNav() {
   return (
     <div>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav className="navbar navbar-dark bg-dark">
         Kenny Faison
         </nav>
         <br></br>
@@ -16,7 +16,7 @@ function Nav() {
           </span>
           <br></br>
           <span className="ml-5">
-            <Link to="#">Contact</Link>
+            <Link to="/Contact">Contact</Link>
           </span>
           <br></br>
           <span className="ml-5">
@@ -30,4 +30,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default MainNav;

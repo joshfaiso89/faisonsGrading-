@@ -1,9 +1,11 @@
 import React from "react";
 import image from '../equipimg.jpg';
+import MainNav from './MainNav';
 
 function Home(props) {
   return (
     <div>
+
       <h1>Faison's Grading & Landscaping</h1>
 
       <img src={image} alt="img" />
